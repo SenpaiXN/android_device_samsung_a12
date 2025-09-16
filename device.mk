@@ -81,7 +81,7 @@ PRODUCT_CHARACTERISTICS := phone
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    fstab.enableswap \
+    fstab.ramplus \
     fstab.mt6765 \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
@@ -96,20 +96,18 @@ PRODUCT_PACKAGES += \
     init.mt6765.rc \
     init.mt6765.usb.rc \
     init.project.rc \
-    init.sensor_1_0.rc \
     init_connectivity.rc \
     meta_init.connectivity.common.rc \
     meta_init.connectivity.rc \
     meta_init.modem.rc \
     meta_init.project.rc \
     meta_init.rc \
-    meta_init.vendor.rc \
     multi_init.rc \
     init.recovery.mt6765.rc \
-    init.recovery.samsung.rc 
+    init.recovery.samsung.rc \
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765 
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6765:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6765
 
 # SEC_RIL
 PRODUCT_COPY_FILES += \
